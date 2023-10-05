@@ -1,0 +1,473 @@
+Level 0: (username)ssh bandit0@bandit.labs.overthewire.org -p 2220
+Password: bandit0
+
+Commands used: ls -alps : used to list the files in the directory
+
+Command used: cat readme: nh2sqwcbdpmtezi3bvbhmm9h66vvxjl (to view the contents of the readme file)
+
+Lesson: I learnt how to list the contents in a directory and also how to use the cat command to display the readme file.
+
+Level 1:  (username)ssh bandit1@bandit.labs.overthewire.org -p 2220
+Password:nh2sqwcbdpmtezi3bvbhmm9h66vvxjl
+
+Commands used: ls -alp : used to list the files in the directory
+Command used: cat ./- rrgizsax8mk1rtb1cnqoxtcyzwu6lgzi (to view the contents of the file)
+
+Lesson: I learnt how to list the contents in a directory and also how to use the cat command with pathname to display the readme file.
+
+Level 2: (username)ssh bandit2@bandit.labs.overthewire.org -p 2220
+Password: rrgizsax8mk1rtb1cnqoxtcyzwu6lgziz
+
+Commands used: ls -alp : used to list the files in the directory 
+Command used: \, '', "": this command can be used to view file or directory with spaces
+Command used: cat spaces\ in \ this \filename: abz0w5emufaf7khtqeowd8baufj2laig (to view the contents of the file)
+
+
+Lesson: I learnt how to list the contents in a directory and also how to use the cat command with a back slash to display the file. 
+
+Level 3: (username)ssh bandit3@bandit.labs.overthewire.org -p 2220
+Password:abz0w5emufaf7khtqeowd8baufj2laig
+
+Command used: ls -al : used to list the files in the driectory
+Command used: find -name -f '.*': used to find files 
+Command used: * (wildcard) : used to specify more than one file at the same time
+Command used: cat ./.hidden: 2ew7bbsr6ammoj2hjw067dm8egx26xne (to view the contents of the file)
+
+Lesson: I learnt how to use the find and wildcard command to dispaly the file and also used cat to dispaly the file.
+
+Level 4:  (username)ssh bandit4@bandit.labs.overthewire.org -p 2220
+Password:2ew7bbsr6ammoj2hjw067dm8egx26xne
+Command used: ls -al
+Command used: cat ./-file07 : lriwwi6bb37kxficqzqudoiyfr6eeeqr (to view the contents of the file)
+
+Lesson: I learnt how to list the contents in a directory and also how to use the cat command with pathname to display of the readme file.
+
+Level 5: (username)ssh bandit5@bandit.labs.overthewire.org -p 2220
+Password: lriwwi6bb37kxficqzqudoiyfr6eeeqr
+
+Command used: find: used to find files or directory
+Command used: -type f: used to search for only files 
+Command used: find -type f -size 1033c : used to find the actual size of a file
+Command used: cat ./.file2 : p4l4vucdmlnm8i7vl7jg1apgsfjykqju (to view the contents of the file)
+
+Lesson: I learnt how to use the find command with an argument of (-type f) and also learnt to denote a file size with (c).
+
+Level 6: (username)ssh bandit6@bandit.labs.overthewire.org -p 2220
+Password: p4l4vucdmlnm8i7vl7jg1apgsfjykqju
+
+Command used: / : used to access the root directory 
+Command used: dev/null : used to destory all data sent to it 
+Command used: -type f : used to search for only files 
+Command used: find / -type f -user bandit 7 -group bandit6 -size 33c 2/ dev/null : used to find the actual file with given parameters
+Command used: cat /var/lib/dpkg/info/bandit7.password : z7wtonqu2xfjmmtwa8u5rn4vzqu4v99s (to view the contents of the file)
+
+Lesson: I learnt how to use the find command 
+
+Level 7: (username)ssh bandit7@bandit.labs.overthewire.org -p 2220
+Password: z7wtonqu2xfjmmtwa8u5rn4vzqu4v99s
+
+Command used: ls : used to list the content in a directory
+Command used: grep : used to print patterns in data 
+Command used: grep millionth data.txt : teskzc0xvtetk0s9xnwm25stk5iwrbvp 
+
+Lesson: I learnt how to use the grep command to look for patterns associated to the word "millionth" 
+
+Level 8: (username)ssh bandit8@bandit.labs.overthewire.org -p 2220
+Password: teskzc0xvtetk0s9xnwm25stk5iwrbvp
+
+Command used: sort : used to sort lines of a text file 
+Command used: uniq : used to omit or report repeated lines in a file
+Command used: | : used to send the output of a command into another command 
+Command used: cat data.txt|sort|uniq -u : en632plfyizbn3phvk3xogslninne00t (to view the contents of the file)
+
+Lesson: I learnt how to use the sort and uniq command for a line in a text file
+        I learnt to use the pipe command to combine all these command into a liner operator.
+
+Level 9: (username)ssh bandit9@bandit.labs.overthewire.org -p 2220
+Password: en632plfyizbn3phvk3xogslninne00t
+
+Command used: strings: used to print the sequence of a printable character in a file 
+Command used: strings -e s : used to specify character encoding and we use "s" for the encoding type 
+Command used: grep : used to print patterns in data
+Command used: | : used to send the output of a command into another command
+Command used: cat data.txt|strings -e s|grep == : g7w8lii6j3ktb8a7j9lgrywteulyyp6s (to view the contents of the file)
+
+Lesson: I learnt how to use strings with its flags and used the grep command to print out patterns in the file
+        I learnt to use the pipe command to combine all these command into a liner operator.
+
+Level 10:  (username)ssh bandit10@bandit.labs.overthewire.org -p 2220
+Password:  g7w8lii6j3ktb8a7j9lgrywteulyyp6s
+
+Command used: | : used to send the output of a command into another command
+Command used: base64 : used to encode and decode data and print it to a standard output 
+Command used: cat data.txt|base64 -d : 6zpezildr2rkndnyfnb6nvckzphlxhbm (to view the contents of the file)
+
+Lesson: I learnt how to use base64 and cat command and used the pipe command to combine all these together into a liner operator.
+
+Level 11: (username)ssh bandit11@bandit.labs.overthewire.org -p 2220
+Password:  6zpezildr2rkndnyfnb6nvckzphlxhbm
+
+Command used: tr : used to translate, squeeze, and/or delete characters from standard input, writing to standard output.
+Command used: | : used to send the output of a command into another command
+Command used: cat data.txt|tr 'a-za-z' 'n-za-mn-za-m' : jvnbbfsmzwkkop0xbfxoow8chdz5yvrv (to view the contents of the file)
+
+Lesson: I learnt how to use the tr and cat command and used the pipe command to combine all these together into liner operator.
+
+Level 12: (username)ssh bandit12@bandit.labs.overthewire.org -p 2220
+Password:  jvnbbfsmzwkkop0xbfxoow8chdz5yvrv
+
+Command used: tar : it is an archiving utility
+Command used: gzip : used to compress or expand files
+Command used: bzip2 : it is a block-sorting file compressor, v1.0.8
+Command used: xxd : used to make a hexdump or do the reverse.
+Command used: mkdir : used to make directories
+Command used: cp : used to copy files and directories
+Command used: mv : used to move (rename) files
+Command used: file : used to determine file type
+Command used: cat data8 : wbwdlbxeir4cae8laphauuoo6pwrmrdw (to view the contents of the file)
+
+Lesson: I learnt how to use different compression and archiving utility, i also learnt how use the xxd command to convert a hex dump into his original binary state
+        I learnt how to create a directory and copy a file from one directory to another and also move the file around with mv command.  
+
+Level 13: (username)ssh bandit13@bandit.labs.overthewire.org -p 2220
+Password: wbwdlbxeir4cae8laphauuoo6pwrmrdw
+
+Command used: ssh : used for a secured connection to a server or machine
+Command used: ssh sshkey.private bandit14@localhost -p 2220
+Command used: cat /etc/bandit_pass/bandit14 :  fgrhpx402xgc7u7rxkdaxiwftoif0enq (to view the contents of the file)
+
+Lesson: I learnt the use of private key and public key with the ssh command 
+
+Level 14: (username)ssh bandit14@bandit.labs.overthewire.org -p 2220
+Password: fgrhpx402xgc7u7rxkdaxiwftoif0enq
+
+Command used: netcat (nc) : used to read and write data across network connection using tcp/udp protocols.
+Command used: nc localhost 30000 :  jn2kgmixj6fshzht2avhotn4zcka6tnt
+
+Lesson: I learnt how to use the netcat command to get the new password for the next level
+
+Level 15: (username)ssh bandit15@bandit.labs.overthewire.org -p 2220
+Password: jn2kgmixj6fshzht2avhotn4zcka6tnt
+
+Command used: openssl : used to generate private keys, create csrs, install your ssl/tls certificate, and identify certificate information.
+Command used: s_client : used to analyze client-server communication 
+Command used: openssl s_client -connect localhost:30001 : jqttfapk4seyhwdli9sxgr50qcloail1
+
+Lesson: I learnt how to use thw openssl and s_client command with the port to open a secured communication channel 
+
+Level 16: (username)ssh bandit16@bandit.labs.overthewire.org -p 2220
+Password: jqttfapk4seyhwdli9sxgr50qcloail1
+
+Command used: openssl : used to generate private keys, create csrs, install your ssl/tls certificate, and identify certificate information.
+Command used: s_client : used to analyze client-server communication 
+Command used: namp : used for network scan and also a network exploration tool and security
+Comaand used: netcat (nc) : used to read and write data across network connection using tcp/udp protocols.
+Command used: ssh : used for a secured connection to a server or machine
+Command used: mkdir : used to create directories
+Command used: touch : used to create a file 
+Command used: vim : it is a open source text editor
+Command used: nmap -sv -t4 -p 31000-32000 localhost : the -t4 flag is used to increase the speed of the scan. 
+                                                      the -p flag is used to specify the ports.
+						      the -sv flag is used to identify the versions of the services.
+ 
+Command used: cat /etc/bandit_pass/bandit17: vwoswtca7lrkktfbr2idh6awj9rnzm5e (to view the contents of the file)
+
+Lesson: I learnt how to use the nmap with it is flags to scan the ports and generated a key which was used to login into the next level and crack the passowrd 
+
+Level 17: (username)ssh bandit17@bandit.labs.overthewire.org -p 2220
+Password: vwoswtca7lrkktfbr2idh6awj9rnzm5e
+
+Command used: diff : used to compare the difference between files line by line
+Command used: diff password.old  password.new : hga5tuuclf6ffzupnagimn8ssu9lfrdg
+
+Lesson: I learnt what the diff command can do to a file which enabled me to get the password for the next level
+
+Level 18: (username)ssh bandit18@bandit.labs.overthewire.org -p 2220
+Password: hga5tuuclf6ffzupnagimn8ssu9lfrdg
+
+Command used: ssh : used for a secured connection to a server or machine
+Commands used: ls : used to list the content in the directory
+Command used: -t : the -t flag of the ssh command is used to specify the shell to be used to login into the system.
+Command used: cat readme: awhqfnnabc1naukrpqdycf95h7homtrc (to view the contents of the file)
+
+Lesson: I learnt that there are other ways to login into the shell if it's modified, "/bin/sh" with -t can make us login with ssh command.
+
+Level 19: (username)ssh bandit19@bandit.labs.overthewire.org -p 2220
+Password: awhqfnnabc1naukrpqdycf95h7homtrc
+
+Command used: ls : used to list the files in the directory   
+Command used: setuid: a bit that makes an executable run with the privileges of the owner of the file
+Command used: ./bandit20-do cat /etc/bandit_pass/bandit20 : vxcazjavyki6w36bkbu0mjtcm8rr95xt
+
+Lesson: I learnt to use the "id' command with the file path to run an executable file on another user 
+
+Level 20: (username)ssh bandit20@bandit.labs.overthewire.org -p 2220
+Password: vxcazjavyki6w36bkbu0mjtcm8rr95xt
+
+Comaand used: netcat (nc) : used to read and write data across network connection using tcp/udp protocols.
+Command used: echo : used to dispaly defined text in the terminal 
+Command used: -lp : the -l flag is used to setup an listener and the -p flag is used to specify the port the the listener should listen on
+Command used: & : the “&” at the end of the command is used to specify that we want the command to run in the background
+Command used: jobs: used to display status of active jobs
+Command used: jobs echo "vxcazjavyki6w36bkbu0mjtcm8rr95xt" |netcat -lp 1234 & : nvejf7ovjkddltpsrdkefollh9v1ibcq
+
+Lesson: I learnt how to setup a listener on the port with the netcat command and which compared the text that we had specified on port 1234 
+        since they matched we got the password for the next level 
+
+Level 21: (username)ssh bandit21@bandit.labs.overthewire.org -p 2220
+Password: nvejf7ovjkddltpsrdkefollh9v1ibcq
+
+Command used: cron : it is a deamon used to execute scheduled commands
+Command used: ls : used to list the content of a directory 
+Command used: vim : it is a open source text editor
+Command used: cat /tmp/t7o6lds9s0rqqh9amcz6shpaozkf7fgv : wddozadtm2z9difeq2mglwngmfj4ezff (to view the contents of the file)
+
+Lesson: I learnt how to view the task schedule by cron and how the list the content in other to get the next level password
+
+Level 22: (username)ssh bandit22@bandit.labs.overthewire.org -p 2220
+Password: wddozadtm2z9difeq2mglwngmfj4ezff
+
+Command used: cron : it is a deamon used to execute scheduled commands
+Command used: ls : used to list the content of a directory 
+Command used: vim : it is a open source text editor
+Command used: cat /tmp/8ca319486bfbbc3663ea0fbe81326349 : qyw0y2aia672psmmh9putquhoz8syr2g (to view the contents of the file)
+
+Lesson: I learnt how to view the task schedule by cron and also used the ls, cat command to view the content in other to get the next level password
+
+Level 23: (username)ssh bandit18@bandit.labs.overthewire.org -p 2220
+Password: qyw0y2aia672psmmh9putquhoz8syr2g
+
+Command used: ls : used to list the content of a directory 
+Command used: vim : it is a open source text editor
+Command used: touch : used to create a file 
+Command used: cat password : vafgxj1pbsspsnvsji8p759lelz9ggar (to view the contents of the file)
+
+Lesson: I learnt how to view the task schedule by cron and also used the ls, cat command to view the content
+        I learnt how to create my first script which is going to be saved to a file called password 
+         
+Level 24: (username)ssh bandit18@bandit.labs.overthewire.org -p 2220
+Password: vafgxj1pbsspsnvsji8p759lelz9ggar
+
+Command used: ls : used to list the content of a directory 
+Command used: vim : it is a open source text editor
+Command used: touch : used to create a file 
+Command used: mkdir : used to create a directory
+Command used: ./brute.sh : p7taowmyrmu23ol8hizh9uvd0o9hpx8d
+
+Lesson: I learnt how to create a bash script in other to bruteforce the password which gave me the password for the next level.
+
+Level 25: (username)ssh bandit25@bandit.labs.overthewire.org -p 2220
+Password: p7taowmyrmu23ol8hizh9uvd0o9hpx8d
+
+Command used: more : used to view multiple pages of a file 
+Command used: ls : used to list the content of a directory
+Command used: vim : it is a open source text editor 
+Command used: cat /etc/bandit_pass/bandit26 : c7gvcklw9mc7auqapx7nwfstuaibw1o1 (to view the contents of the file)
+
+Lesson: I learnt how use the more command to enter into a vim editor to enable me input the right parameters for the next level password
+
+Level 26: (username)ssh bandit26@bandit.labs.overthewire.org -p 2220
+Password:  c7gvcklw9mc7auqapx7nwfstuaibw1o1
+
+Command used: ls : used to list the content of a directory
+Command used: file : used to get the file type 
+Command used: ./bandit27-do cat /etc/bandit_pass/bandit27 : ynqpbuifnmas1hcufk70zmqkhuu2euas
+
+Lesson: i learnt that the password for the next level is a binary file, so using the cat command displayed the password 
+
+Level 27: (username)ssh bandit27@bandit.labs.overthewire.org -p 2220
+Password: ynqpbuifnmas1hcufk70zmqkhuu2euas
+
+Command used: cd : used to change directory 
+Command used: mkdir : used to create a directory
+Command used: git : it is a version control system designed to handle everything from small and large project with speed and efficiency
+Command used: cat readme : avanl161y9rsbcjisfhuw35rjaom19nr (to view the contents of the file)
+
+Lesson: I learnt the use of git and how to clone a git repository in other to get next level password 
+
+Level 28: (username)ssh bandit28@bandit.labs.overthewire.org -p 2220
+Password: avanl161y9rsbcjisfhuw35rjaom19nr
+  
+Command used: cd : used to change directory 
+Command used: mkdir : used to create a directory
+Command used: git : it is a version control system designed to handle everything from small and large project with speed and efficiency
+Command used: git log : used to list the commit log of the repository 
+Command used: git checkout : used to go back to a previous version of the repository 
+Command used: cat read.md : tqkvmcwnycfs6vmphiusi3shmsrqzk8s (to view the contents of the file)
+
+Lesson: I learnt the use of git and how to clone a git repository to get a censored password but had to go back to the previous version to 
+        get the next level password
+
+Level 29: (username)ssh bandit29@bandit.labs.overthewire.org -p 2220
+Password: tqkvmcwnycfs6vmphiusi3shmsrqzk8s
+
+Command used: cd : used to change directory 
+Command used: mkdir : used to create a directory
+Command used: git : it is a version control system designed to handle everything from small and large project with speed and efficiency
+Command used: git checkout : used to go back to a previous version of the repository
+Command used: cat read.md : xbhv3hpngltidnjurdalpzc2l6y9eons (to view the contents of the file)
+
+Lesson: I learnt how to clone a git repository to get "no password in production" 
+        i find out git has branches so i checked out the development branch and had to go back to the previous version to get the 
+        next level password  
+
+Level 30: (username)ssh bandit30@bandit.labs.overthewire.org -p 2220
+Password: xbhv3hpngltidnjurdalpzc2l6y9eons
+
+Command used: cd : used to change directory 
+Command used: mkdir : used to create a directory
+Command used: git : it is a version control system designed to handle everything from small and large project with speed and efficiency
+Command used: tag :
+Command used: git show secert : ooffzgdlzhalerfj2caiz1d41jw1mhmt
+
+Lesson: I learnt how to clone a git repository to get an empty file, i find out git has tags so i checked it out to a file called secret 
+        I used the command git show secret to get the next level password
+
+Level 31: (username)ssh bandit31@bandit.labs.overthewire.org -p 2220
+Password: ooffzgdlzhalerfj2caiz1d41jw1mhmt
+
+Command used: cd : used to change directory 
+Command used: mkdir : used to create a directory
+Command used: git : it is a version control system designed to handle everything from small and large project with speed and efficiency
+Command used: git add: used to instruct git what files add to the staging area
+Command used: -m : this flag used to specify the commit message 
+Command used: git push origin master : rmcbvg56y58bxzv98yzgdo7atvl5dw8y
+
+Lesson: I learnt how to clone a git repository to get an instruction on a file, and push the changes to the reomte repository to get the 
+        password 
+
+Level 32: (username)ssh bandit32@bandit.labs.overthewire.org -p 2220
+Password:  rmcbvg56y58bxzv98yzgdo7atvl5dw8y
+
+Command used: ls -la : used to list content of a directory 
+Command used: id : 
+Command used: cat /etc/bandit_pass/bandit33 : odho63fhifqcwwjg9rlildtpm45kzuky (to view the contents of the file)
+
+Lesson: 
+
+Level 33: (username)ssh bandit31@bandit.labs.overthewire.org -p 2220
+Password: odho63fhifqcwwjg9rlildtpm45kzuky
+
+Congratulation !!!
+
+
+SCRIPT USED 
+
+level 22:
+
+#!/bin/bash
+
+myname=$(whoami)
+mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+
+echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
+
+Lets break down the script line by line
+
+   1. The output of whoami command is getting saved in a variable called myname 
+      (Since this script is being executed for bandit23 the output of whoami will be bandit23 which is saved in the myname variable)
+   2.  Next the sentence “I am user bandit23” is passed to the md5sum command which will calculate the md5sum of the given string 
+       and lastly using cut command the first field from the output of the md5sum command is selected and saved in the variable mytarget
+   3. Then an file is being created in the /tmp directory with the name of the file being same as the value of “mytarget”
+   4. And finally the password of bandit23 is being saved into that file
+
+So looking at this script we can say that our goal is to find the value of “mytarget”. 
+Since we know that the value of “myname” is bandit23 lets see if we can able to generate the value of “mytarget”.
+
+
+level 23:
+
+#!/bin/bash
+
+myname=$(whoami)
+
+cd /var/spool/$myname/foo || exit 1
+echo "Executing and deleting all scripts in /var/spool/$myname/foo:"
+for i in * .*;
+do
+    if [ "$i" != "." -a "$i" != ".." ];
+    then
+        echo "Handling $i"
+        owner="$(stat --format "%U" ./$i)"
+        if [ "${owner}" = "bandit23" ]; then
+            timeout -s 9 60 ./$i
+        fi
+        rm -rf ./$i
+    fi
+done
+
+Lets break down the script line by line:
+
+    1. The output of whoami command is getting saved in a variable called myname (Since this script is being executed by bandit24 the output of whoami will be bandit24 which is saved in the myname variable)
+    2. A folder called bandit24 exist in the /var/spool directory. The working directory is changed to this folder.
+    3. Then a statement saying all the scripts that are present in the folder /var/spool/bandit24 is being deleted is printed.
+    4. For loop is used to iterating through all the files in the directory (.* : All files in current working directory)
+    5.A check is made to see if the current selected file is called . or .. if not then the rest of the code is executed. (“.” means current directory (bandit24) and “..” means the parent directory (spool))
+    6. The name of the current selected file is printed and then the information about the owner of the file is saved in the variable “owner”.
+    7. An check is made to check if the owner of the current selected file is “bandit23”. If it is then the current selected file is executed and sent the KILL signal after waiting for 60 seconds and then deleted (-s flag in timeout command is used to specify the signal to send to the command “9” is an alias for the KILL command)
+
+So from this we understand that whatever file is saved in the folder “bandit24” gets executed and if the file was created by “bandit23” then after 60 seconds of execution the file is deleted. If we want the password for “bandit24” we need to write a script that will be executed from the bandit24 folder. The script that we write should get the password and save in a location that we can access (/tmp directory)
+
+Lets make a folder in the /tmp directory and use that as the base location for all the operations here on out.
+
+
+level 23 : 
+
+#!/bin/bash
+
+cat /etc/bandit_pass/bandit24 > /tmp/rand/password
+
+
+level 24: 
+
+#!/bin/bash
+
+for pin in {0000..9999}; do
+        echo "VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar $pin";
+done | nc localhost 30002
+
+Lets bre down the script line by line 
+    1. This is a for loop 
+    2. The value returned by echo should be changed to the “password of bandit24” 
+    3. Then we followvby the value of variable “pin” separated by a space as that's the format the input is expected by the daemon.
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
